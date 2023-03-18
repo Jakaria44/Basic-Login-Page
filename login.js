@@ -1,18 +1,18 @@
 const small = new RegExp('(?=.*[a-z])');
-    const capital = new RegExp('(?=.*[A-Z])');
-    const number = new RegExp('(?=.*[0-9])');
-    const more8 = new RegExp('(?=.{8,})');
-    const spec = new RegExp('(?=.*[!@#\$%\^&\*])');
-    const space = /\s/g;
+const capital = new RegExp('(?=.*[A-Z])');
+const number = new RegExp('(?=.*[0-9])');
+const more8 = new RegExp('(?=.{8,})');
+const spec = new RegExp('(?=.*[!@#\$%\^&\*])');
+const space = /\s/g;
 
-    var all_testing = false;
+var all_testing = false;
 
-    const smallchck = document.getElementById('small');
-    const capchck = document.getElementById('cap');
-    const numchck = document.getElementById('num');
-    const specchk = document.getElementById('special');
-    const lenchck = document.getElementById('8char');
-    const submitbtn = document.getElementById('submit');
+const smallchck = document.getElementById('small');
+const capchck = document.getElementById('cap');
+const numchck = document.getElementById('num');
+const specchk = document.getElementById('special');
+const lenchck = document.getElementById('8char');
+const submitbtn = document.getElementById('submit');
 
     function username_pressed(str){
         if(space.test(str)){

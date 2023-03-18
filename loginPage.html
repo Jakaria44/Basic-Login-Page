@@ -6,34 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="logInStyle.css">
-
+    <script src="https://kit.fontawesome.com/9cc8818901.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main">
         <h1>Sign up</h1>
-        <div class="field">
-            <!-- <fieldset id="username_field" class="input_field" > -->
-                <!-- <legend id="username_legend" class="allLegend"  >Username</legend> -->
-                <input  type="text" name="username" class="all_input" id="username_input" placeholder="Username"  onkeyup="username_pressed(this.value)">
-            <!-- </fieldset> -->
-        </div>
-        <div class="field" >
-            <!-- <fieldset id="password1_field" class="input_field"> -->
-                <!-- <legend class="allLegend" id="password1_legend">Enter Password</legend> -->
-                <input type="password" name="password1" class="all_input" id="password1_input" placeholder="Enter Password" onkeyup="passcheck(this.value)">
-            <!-- </fieldset> -->
+        <div class="all_input" onfocus="inputFocused(this)">
+                <i class="fa-solid fa-user"  ></i>
+                <input  type="text" name="username" class="input_field" id="username_input" placeholder="Username"  onkeyup="username_pressed(this.value)" >
+            </div>
+            <div class="all_input">
+                <i class="fa-solid fa-lock"  ></i>
+                <input type="password" name="password1"class="input_field"  id="password1_input" placeholder="Enter Password" onkeyup="passcheck(this.value)">
                 <button class="showHide" id="show1" onclick="show1()" ">show</button>
                 <button class="showHide" id="hide1" onclick="hide1()" ">hide</button>
-        </div>
-        <div class="field">
-            <!-- <fieldset id="password2_field" class="input_field"> -->
-                <!-- <legend class="allLegend" id="password2_legend">Re-type Password</legend> -->
-                <input  type="password" name="password2" class="all_input" id="password2_input" placeholder="Re-type Password" onkeyup="pass2check(this.value)" >
-            <!-- </fieldset> -->
+            </div>
+            <div class="all_input" onfocus="inputFocused(this)">
+                <i class="fa-solid fa-lock"  ></i>
+                <input  type="password" name="password2" class="input_field"  id="password2_input" placeholder="Re-type Password" onkeyup="pass2check(this.value)" >
                 <button class="showHide" id="show2" onclick="show2()" ">show</button>
                 <button class="showHide" id="hide2" onclick="hide2()" ">hide</button>
 
         </div>
+        
         <div class="chck">
             <p class="checking" id="match_pass" >Password doesn't match</p>
             <p class="checking" id="8char"> 8 characters</p>
@@ -41,7 +41,6 @@
             <p class="checking" id="cap"> 1 capital letter</p>
             <p class="checking" id="special"> 1 special character</p>
             <p class="checking" id="num"> 1 numerical character</p>
-            <br>
             <p class="checking" id="spaceCheck">Username can't contain whitespace</p>
         </div>
         <div style="margin:auto; width: fit-content">

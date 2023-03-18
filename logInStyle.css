@@ -1,63 +1,60 @@
 
 .main{
     height: 100%;
-    width: 25%;
+    width: 40%;
     margin: auto;
     margin-top: 20px;
-    /* display: flex; */
     flex-direction: column;
-    /* border: 1px solid black; */
     padding: 10px;
     box-shadow: 0px 5px 20px 10px #888888;
     background-color: #0988ea;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .main{
         width: 65%;
     }
 }
 h1{
+    font-family: 'Inconsolata', monospace;
     font-size: 140%;
     text-align: center;
 }
-
-.field{
-    display: flex;
-
-
-}
- /*.input_field{ 
-    padding: 7px;
-    margin-top: 10px;
-    
-    border-radius: 10px;
-    border: 1px solid white;
-} 
-*/
-/* .allLegend{
-    font-size: 10px; 
-    display: none;
-} */
 .all_input{
+    display: flex;
+    margin: auto;
     position: relative;
     background-color: #aafffc;
-    font-size: 50%;
     padding: 5px; 
     margin-bottom: 5px;
-    margin-top: 5px;
-    width: 75%;
+    margin-top: 25px;
+    width: 85%;
     color: #000;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 0px 1px 5px ;
-    /* border: 0px; */
 } 
 .all_input:focus {
-    outline: 2px solid rgb(5, 122, 96);
+    outline: none;
     background-color: #faffff;
     color: black;
-    box-shadow: 0px 0px 19px ;
-    
+}
+.input_field{
+    font-family: 'Raleway', sans-serif;
+    font-size: 80%;
+    border: none; 
+    background-color: inherit;
+    width: inherit;
+}
+.input_field:focus{
+    outline: none; 
+    background-color: inherit;
+    width: inherit;
+}
+.fa-solid{
+    align-items: center;
+    display: flex;
+    margin: 5px;
+    margin-right: 10px;
 }
 .chck{
     height: fit-content;
@@ -66,6 +63,7 @@ h1{
     color: black;
 }
 .checking{
+    font-family: 'EB Garamond', serif;
     font-size: 80%;
     margin: 1px;
 }
@@ -80,39 +78,50 @@ h1{
     border-radius: 10px;
     color: #ffffff;
     padding: 5px 15px 5px 15px;
-    font-size: 9px;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Inconsolata', monospace;
+    /* font-size: 9px; */
     background-color: grey;
 }
 .showHide{
+    font-family: 'EB Garamond', serif;
     float: left;
-    width: 15%;
-    height: fit-content;
     margin: auto;
-    margin-left: 4px;
-    font-size: 10px;
-    padding: 0px;
+    margin-left: 10px;
+    font-size: 80%;
+    padding: 3px;
     cursor: pointer;
-    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
 }
 
 #show1, #show2{
-    width: 20%;
-    background-color: white ;
+    width: 15%;
+    background-color: #42ece6 ;
     color: black;
     border: none;
-    border-radius: 2px;
-
+}
+#show1:hover{
+    background-color: black ;
+    color: white;
+}
+#show2:hover{
+    background-color: black ;
+    color: white;
 }
 #hide1,#hide2{
     display: none;
-    width: 20%;
+    width: 15%;
     background-color: black;
     color: white;
-    border: none;
-    border-radius: 2px;
 }
-
+#hide1:hover{
+    background-color: #42ece6;
+    color: black;
+}
+#hide2:hover{
+    background-color: #42ece6;
+    color: black;
+}
 
 .labels{
     font-size: 10px;

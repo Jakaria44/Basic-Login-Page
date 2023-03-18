@@ -2,4 +2,4 @@
 A basic login page using HTML, CSS and Javascript
 
 
-Try it here : https://jakariahossain.w3spaces.com/
+Try it here : https://jakariahossain.w3spaces.com/basic-sign-up/

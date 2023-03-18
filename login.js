@@ -68,10 +68,7 @@ const small = new RegExp('(?=.*[a-z])');
             submitbtn.style.backgroundColor = "rgb(24,90,188)";
             submitbtn.style.cursor = "pointer";
             
-
             document.getElementById('password2_input').style.border="2px solid green";
-        }else if(str.length ==0){
-            document.getElementById('password2_input').style.border="none";
         }  else {
             submitbtn.style.cursor = "default";
             submitbtn.disabled = true;
@@ -80,7 +77,9 @@ const small = new RegExp('(?=.*[a-z])');
             
 
         }
-
+        if( str.length ==0){
+            document.getElementById('password2_input').style.border="none";
+        }
         document.getElementById('match_pass').style.display= pass1==str ? 'none':'block';        
     }
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="logInStyle.css">
+
+</head>
+<body>
+    <div class="main">
+        <h1>Sign up</h1>
+        <div class="field">
+            <!-- <fieldset id="username_field" class="input_field" > -->
+                <!-- <legend id="username_legend" class="allLegend"  >Username</legend> -->
+                <input  type="text" name="username" class="all_input" id="username_input" placeholder="Username"  onkeyup="username_pressed(this.value)">
+            <!-- </fieldset> -->
+        </div>
+        <div class="field" >
+            <!-- <fieldset id="password1_field" class="input_field"> -->
+                <!-- <legend class="allLegend" id="password1_legend">Enter Password</legend> -->
+                <input type="password" name="password1" class="all_input" id="password1_input" placeholder="Enter Password" onkeyup="passcheck(this.value)">
+            <!-- </fieldset> -->
+                <button class="showHide" id="show1" onclick="show1()" ">show</button>
+                <button class="showHide" id="hide1" onclick="hide1()" ">hide</button>
+        </div>
+        <div class="field">
+            <!-- <fieldset id="password2_field" class="input_field"> -->
+                <!-- <legend class="allLegend" id="password2_legend">Re-type Password</legend> -->
+                <input  type="password" name="password2" class="all_input" id="password2_input" placeholder="Re-type Password" onkeyup="pass2check(this.value)" >
+            <!-- </fieldset> -->
+                <button class="showHide" id="show2" onclick="show2()" ">show</button>
+                <button class="showHide" id="hide2" onclick="hide2()" ">hide</button>
+
+        </div>
+        <div class="chck">
+            <p class="checking" id="match_pass" style="display: none; color: red;">Password doesn't match</p>
+            <p class="checking" id="8char"> 8 characters</p>
+            <p class="checking" id="small"> 1 small letter</p>
+            <p class="checking" id="cap"> 1 capital letter</p>
+            <p class="checking" id="special"> 1 special character</p>
+            <p class="checking" id="num"> 1 numerical character</p>
+            <br>
+            <p class="checking" id="spaceCheck">Username can't contain whitespace</p>
+        </div>
+        <div style="margin:auto; width: fit-content">
+            <button type="submit" id="submit" disabled>SIGN UP</button>
+        </div>
+    </div>
+</body>
+
+<script src="login.js"></script>
+</html>

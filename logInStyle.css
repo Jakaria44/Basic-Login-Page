@@ -1,0 +1,116 @@
+
+
+.main{
+    /* height: 325px; */
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    /* display: flex; */
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: 0px 5px 20px 10px #888888;
+    background-color: #0988ea;
+}
+
+h1{
+    font-size: 16px;
+    text-align: center;
+}
+
+.field{
+    display: flex;
+
+
+}
+ /*.input_field{ 
+    padding: 7px;
+    margin-top: 10px;
+    
+    border-radius: 10px;
+    border: 1px solid white;
+} 
+*/
+/* .allLegend{
+    font-size: 10px; 
+    display: none;
+} */
+.all_input{
+    position: relative;
+    background-color: #aafffc;
+    font-size: 10px;
+    padding: 5px; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 75%;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 1px 5px ;
+    /* border: 0px; */
+} 
+.all_input:focus {
+    outline: 2px solid rgb(5, 122, 96);
+    background-color: #faffff;
+    color: black;
+    box-shadow: 0px 0px 19px ;
+    
+}
+.chck{
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+}
+.checking{
+    font-size: 10px;
+    margin: 1px;
+}
+
+#spaceCheck{
+    color: rgb(244, 174, 139);
+    display: none;
+    
+}
+#submit{
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px 15px 5px 15px;
+    font-size: 9px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    background-color: grey;
+}
+.showHide{
+    float: left;
+    width: 15%;
+    height: fit-content;
+    margin: auto;
+    margin-left: 4px;
+    font-size: 10px;
+    padding: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#show1, #show2{
+    width: 20%;
+    background-color: white ;
+    color: black;
+    border: none;
+    border-radius: 2px;
+
+}
+#hide1,#hide2{
+    display: none;
+    width: 20%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+
+.labels{
+    font-size: 10px;
+}
